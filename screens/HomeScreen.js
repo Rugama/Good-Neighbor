@@ -9,32 +9,7 @@ import {
 } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-
 export default function HomeScreen({ navigation }) {
-	
-
-	const post2 = [
-		'request',
-		'Doug',
-		'Mathis',
-		'Los Angeles',
-		'CA',
-		'mathis@gmail.com',
-		'Need clothes to take for foster childen.',
-		Date().toLocaleString(),
-	];
-
-	const post3 = [
-		'donation',
-		'Eric',
-		'Foster',
-		'Los Angeles',
-		'CA',
-		'foster@gmail.com',
-		'I have a lot of canned food I am willing to donate.',
-		Date().toLocaleString(),
-	];
-
 	return (
 		<View style={styles.container}>
 			<Text style={styles.header}>Welcome to Good Neighbor</Text>

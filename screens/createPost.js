@@ -8,6 +8,7 @@ import {
 	KeyboardAvoidingView,
 	TouchableHighlight,
 	Alert,
+	Keyboard,
 } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { addPost } from '../action/post';
@@ -105,7 +106,7 @@ const createPost = ({ navigation }) => {
 	//LIST FORM
 	return (
 		<SafeAreaView style={styles.container}>
-			<KeyboardAvoidingView>
+			<KeyboardAvoidingView behavior='position'>
 				<ScrollView>
 					<Text style={styles.text}>Post Type: </Text>
 					<TouchableHighlight
@@ -179,6 +180,9 @@ const createPost = ({ navigation }) => {
 						multiline
 						numberOfLines={5}
 						returnKeyType='done'
+						onSubmitEditing={() => {
+							Keyboard.dismiss();
+						}}
 						placeholder={
 							type === 'request'
 								? 'Enter request here'

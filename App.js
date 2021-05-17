@@ -3,7 +3,6 @@ import { View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './screens/HomeScreen';
-import Two from './screens/screenTwo';
 import createPost from './screens/CreatePost';
 import PostList from './screens/PostList';
 import Map from './screens/Map';
