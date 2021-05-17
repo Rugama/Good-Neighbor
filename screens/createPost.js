@@ -7,6 +7,7 @@ import {
 	SafeAreaView,
 	KeyboardAvoidingView,
 	TouchableHighlight,
+	Alert,
 } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { addPost } from '../action/post';
